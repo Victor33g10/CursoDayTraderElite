@@ -1,0 +1,376 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Day Trade Elite Pro</title>
+    <meta
+      name="description"
+      content="Plataforma premium do curso Day Trade Elite Pro com 8 modulos, 67 aulas, player de video e progresso do aluno."
+    >
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <svg class="icon-sprite" aria-hidden="true" focusable="false">
+      <symbol id="icon-menu" viewBox="0 0 24 24">
+        <path d="M4 7h16M4 12h16M4 17h16"></path>
+      </symbol>
+      <symbol id="icon-close" viewBox="0 0 24 24">
+        <path d="M6 6l12 12M18 6 6 18"></path>
+      </symbol>
+      <symbol id="icon-play" viewBox="0 0 24 24">
+        <path d="M8 6.5v11l9-5.5-9-5.5Z"></path>
+      </symbol>
+      <symbol id="icon-check" viewBox="0 0 24 24">
+        <path d="m5 12 4.2 4.2L19 7.4"></path>
+      </symbol>
+      <symbol id="icon-clock" viewBox="0 0 24 24">
+        <path d="M12 7v5l3 2"></path>
+        <circle cx="12" cy="12" r="8.5"></circle>
+      </symbol>
+      <symbol id="icon-chart" viewBox="0 0 24 24">
+        <path d="M4 18h16"></path>
+        <path d="m6 15 3-4 3 2 5-6 1 1"></path>
+      </symbol>
+      <symbol id="icon-book" viewBox="0 0 24 24">
+        <path d="M5 5.5A2.5 2.5 0 0 1 7.5 3H19v16H7.5A2.5 2.5 0 0 0 5 21V5.5Z"></path>
+        <path d="M5 18.5A2.5 2.5 0 0 1 7.5 16H19"></path>
+      </symbol>
+      <symbol id="icon-chevron" viewBox="0 0 24 24">
+        <path d="m8 10 4 4 4-4"></path>
+      </symbol>
+      <symbol id="icon-arrow-left" viewBox="0 0 24 24">
+        <path d="m15 18-6-6 6-6"></path>
+      </symbol>
+      <symbol id="icon-arrow-right" viewBox="0 0 24 24">
+        <path d="m9 18 6-6-6-6"></path>
+      </symbol>
+      <symbol id="icon-grid" viewBox="0 0 24 24">
+        <path d="M4.5 4.5h6v6h-6zM13.5 4.5h6v6h-6zM4.5 13.5h6v6h-6zM13.5 13.5h6v6h-6z"></path>
+      </symbol>
+      <symbol id="icon-folder" viewBox="0 0 24 24">
+        <path d="M3.5 7.5h6l2 2h9v8a2 2 0 0 1-2 2h-13a2 2 0 0 1-2-2v-10a2 2 0 0 1 2-2Z"></path>
+      </symbol>
+      <symbol id="icon-community" viewBox="0 0 24 24">
+        <path d="M16.5 18v-1a3.5 3.5 0 0 0-3.5-3.5H8.5A3.5 3.5 0 0 0 5 17v1"></path>
+        <circle cx="10.75" cy="8.25" r="2.75"></circle>
+        <path d="M17 13.5a3.2 3.2 0 0 1 2 3V18"></path>
+        <path d="M14.75 5.75a2.5 2.5 0 0 1 0 5"></path>
+      </symbol>
+      <symbol id="icon-settings" viewBox="0 0 24 24">
+        <path d="M12 8.5A3.5 3.5 0 1 0 12 15.5A3.5 3.5 0 1 0 12 8.5Z"></path>
+        <path d="M19.4 15a1 1 0 0 0 .2 1.1l.1.1a2 2 0 0 1-2.8 2.8l-.1-.1a1 1 0 0 0-1.1-.2 1 1 0 0 0-.6.9V20a2 2 0 0 1-4 0v-.1a1 1 0 0 0-.6-.9 1 1 0 0 0-1.1.2l-.1.1a2 2 0 1 1-2.8-2.8l.1-.1a1 1 0 0 0 .2-1.1 1 1 0 0 0-.9-.6H4a2 2 0 0 1 0-4h.1a1 1 0 0 0 .9-.6 1 1 0 0 0-.2-1.1l-.1-.1a2 2 0 1 1 2.8-2.8l.1.1a1 1 0 0 0 1.1.2 1 1 0 0 0 .6-.9V4a2 2 0 0 1 4 0v.1a1 1 0 0 0 .6.9 1 1 0 0 0 1.1-.2l.1-.1a2 2 0 1 1 2.8 2.8l-.1.1a1 1 0 0 0-.2 1.1 1 1 0 0 0 .9.6H20a2 2 0 0 1 0 4h-.1a1 1 0 0 0-.9.6Z"></path>
+      </symbol>
+    </svg>
+
+    <div class="app-shell" id="appShell">
+      <aside class="sidebar" id="sidebar">
+        <div class="sidebar-inner">
+          <div class="brand-lockup">
+            <div class="brand-mark">DT</div>
+            <div class="brand-copy">
+              <strong>Day Trade Elite Pro</strong>
+              <span>Area de membros</span>
+            </div>
+            <button class="icon-button sidebar-dismiss" id="sidebarClose" aria-label="Fechar menu">
+              <svg><use href="#icon-close"></use></svg>
+            </button>
+          </div>
+
+          <nav class="sidebar-nav" aria-label="Navegacao lateral">
+            <a class="nav-item is-active" href="#visao-geral">
+              <svg><use href="#icon-grid"></use></svg>
+              <span>Visao geral</span>
+            </a>
+            <a class="nav-item" href="#player">
+              <svg><use href="#icon-play"></use></svg>
+              <span>Aulas</span>
+            </a>
+            <a class="nav-item" href="#curriculo">
+              <svg><use href="#icon-book"></use></svg>
+              <span>Modulos</span>
+            </a>
+            <a class="nav-item" href="#materiais">
+              <svg><use href="#icon-folder"></use></svg>
+              <span>Materiais</span>
+            </a>
+            <a class="nav-item" href="#mentoria">
+              <svg><use href="#icon-community"></use></svg>
+              <span>Comunidade</span>
+            </a>
+            <a class="nav-item" href="#preferencias">
+              <svg><use href="#icon-settings"></use></svg>
+              <span>Preferencias</span>
+            </a>
+          </nav>
+
+          <section class="sidebar-card" id="visao-geral">
+            <div class="progress-ring" id="progressRing" aria-hidden="true">
+              <div class="progress-ring-inner">
+                <strong id="progressPercent">0%</strong>
+                <span>Concluido</span>
+              </div>
+            </div>
+            <div class="sidebar-card-copy">
+              <p class="sidebar-card-label">Ritmo do aluno</p>
+              <strong id="sidebarProgressText">0 de 67 aulas concluidas</strong>
+              <span id="sidebarProgressHint">Comece pela primeira aula do Modulo 01.</span>
+            </div>
+          </section>
+
+          <section class="sidebar-card sidebar-start-card">
+            <p class="sidebar-card-label">Comecar agora</p>
+            <strong id="continueLessonTitle">Boas-vindas e visao do programa</strong>
+            <span id="continueLessonMeta">Modulo 01 - Aula 01</span>
+          </section>
+        </div>
+      </aside>
+
+      <button class="sidebar-backdrop" id="sidebarBackdrop" aria-hidden="true"></button>
+
+      <main class="main-shell">
+        <header class="topbar">
+          <div class="topbar-left">
+            <button class="icon-button" id="sidebarToggle" aria-label="Abrir menu">
+              <svg><use href="#icon-menu"></use></svg>
+            </button>
+            <div class="breadcrumb">
+              <span>Programa premium</span>
+              <span class="divider"></span>
+              <span id="currentModuleCrumb">Fundamentos do Day Trade Profissional</span>
+            </div>
+          </div>
+
+          <div class="topbar-right">
+            <button class="secondary-button" id="focusButton">Modo foco</button>
+            <div class="profile-chip">
+              <div class="profile-avatar">AL</div>
+              <div class="profile-copy">
+                <strong>Aluno ativo</strong>
+                <span id="courseStatus">0 de 67 aulas concluidas</span>
+              </div>
+            </div>
+          </div>
+        </header>
+
+        <section class="hero-band" id="heroBand">
+          <div class="hero-copy">
+            <div class="hero-kicker">
+              <span class="eyebrow">Formacao completa em day trade</span>
+              <span class="status-chip">Acesso liberado</span>
+            </div>
+
+            <h1>Day Trade Elite Pro</h1>
+            <p>
+              Plataforma de estudo premium para leitura de mercado, fluxo, execucao e gestao de risco.
+              Tudo em ordem progressiva, sem poluicao visual e pronto para voce comecar do zero.
+            </p>
+
+            <div class="hero-stats" aria-label="Resumo do curso">
+              <div class="hero-stat">
+                <strong id="statModules">8</strong>
+                <span>Modulos</span>
+              </div>
+              <div class="hero-stat">
+                <strong id="statLessons">67</strong>
+                <span>Aulas</span>
+              </div>
+              <div class="hero-stat">
+                <strong id="statWorkload">0h</strong>
+                <span>Carga guiada</span>
+              </div>
+            </div>
+
+            <div class="hero-progress">
+              <div class="progress-track" aria-hidden="true">
+                <span id="heroProgressFill"></span>
+              </div>
+              <div class="hero-progress-copy">
+                <strong id="heroProgressText">0% concluido</strong>
+                <span id="heroProgressDetail">Comece pelo Modulo 01 e siga a ordem sugerida.</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-visual" aria-label="Capa do curso">
+            <img src="assets/day-trade-elite-pro-poster.png" alt="Capa do curso Day Trade Elite Pro">
+            <div class="hero-visual-overlay">
+              <p>Primeira aula liberada</p>
+              <strong id="heroCurrentLesson">Boas-vindas e visao do programa</strong>
+              <span id="heroCurrentModule">Modulo 01</span>
+            </div>
+          </div>
+        </section>
+
+        <section class="overview-strip" aria-label="Resumo de organizacao do curso">
+          <article class="overview-card">
+            <p class="section-label">Comece aqui</p>
+            <strong id="overviewStartTitle">Boas-vindas e visao do programa</strong>
+            <span id="overviewStartMeta">Modulo 01 - Aula 01</span>
+          </article>
+          <article class="overview-card">
+            <p class="section-label">Sequencia sugerida</p>
+            <strong>Fundacao -> Execucao -> Consistencia</strong>
+            <span>8 modulos em trilha unica, com ordem clara de estudo.</span>
+          </article>
+          <article class="overview-card">
+            <p class="section-label">Seu progresso</p>
+            <strong id="overviewProgressText">Nenhuma aula concluida</strong>
+            <span id="overviewProgressMeta">Tudo zerado para iniciar do ponto certo.</span>
+          </article>
+        </section>
+
+        <section class="workspace-grid">
+          <section class="player-panel" id="player">
+            <div class="section-header">
+              <div>
+                <p class="section-label">Player de aula</p>
+                <h2 id="playerTitle">Boas-vindas e visao do programa</h2>
+              </div>
+              <div class="section-meta">
+                <span class="meta-pill" id="playerType">Onboarding</span>
+                <span class="meta-pill" id="playerDuration">8 min</span>
+              </div>
+            </div>
+
+            <div class="video-shell">
+              <video
+                id="courseVideo"
+                class="course-video"
+                controls
+                preload="metadata"
+                playsinline
+                poster="assets/day-trade-elite-pro-poster.png"
+              >
+                <source id="videoSource" src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4" type="video/mp4">
+              </video>
+              <button class="video-overlay" id="videoOverlay" aria-label="Reproduzir aula atual">
+                <span class="video-overlay-icon">
+                  <svg><use href="#icon-play"></use></svg>
+                </span>
+                <span class="video-overlay-copy">
+                  <strong>Assistir agora</strong>
+                  <span id="overlayLessonTitle">Modulo 01 - Boas-vindas e visao do programa</span>
+                </span>
+              </button>
+            </div>
+
+            <div class="player-details">
+              <div class="player-summary">
+                <p class="section-label" id="playerModule">Fundamentos do Day Trade Profissional</p>
+                <h3 id="lessonHeadline">Boas-vindas e visao do programa</h3>
+                <p id="lessonSummary">
+                  Entenda a estrutura do curso, a ordem de estudo ideal e como usar a plataforma ao longo da trilha.
+                </p>
+              </div>
+
+              <div class="player-actions">
+                <button class="secondary-button" id="prevLessonButton">
+                  <svg><use href="#icon-arrow-left"></use></svg>
+                  <span>Aula anterior</span>
+                </button>
+                <button class="primary-button" id="completeLessonButton">
+                  <svg><use href="#icon-check"></use></svg>
+                  <span>Marcar como concluida</span>
+                </button>
+                <button class="secondary-button" id="nextLessonButton">
+                  <span>Proxima aula</span>
+                  <svg><use href="#icon-arrow-right"></use></svg>
+                </button>
+              </div>
+            </div>
+          </section>
+
+          <section class="curriculum-panel" id="curriculo">
+            <div class="section-header">
+              <div>
+                <p class="section-label">Curriculo completo</p>
+                <h2>8 modulos organizados em ordem progressiva</h2>
+                <p class="panel-intro">Siga do Modulo 01 ao 08 para absorver contexto, execucao e consistencia sem pular etapas.</p>
+              </div>
+              <div class="curriculum-badge">
+                <svg><use href="#icon-chart"></use></svg>
+                <span id="curriculumBadge">67 aulas detalhadas</span>
+              </div>
+            </div>
+
+            <div class="module-list" id="moduleList" aria-live="polite"></div>
+          </section>
+        </section>
+
+        <section class="support-grid">
+          <section class="support-panel" id="materiais">
+            <div class="section-header">
+              <div>
+                <p class="section-label">Materiais</p>
+                <h2>Recursos de apoio</h2>
+              </div>
+            </div>
+            <div class="support-list">
+              <div class="support-row">
+                <strong>Checklist pre-abertura</strong>
+                <span>Rotina curta para contexto, agenda economica e definicao dos cenarios do dia.</span>
+              </div>
+              <div class="support-row">
+                <strong>Playbook operacional</strong>
+                <span>Modelo para registrar setups, filtros, gatilhos e observacoes importantes.</span>
+              </div>
+              <div class="support-row">
+                <strong>Planilha de risco</strong>
+                <span>Controle visual para meta diaria, limite de perda e disciplina operacional.</span>
+              </div>
+            </div>
+          </section>
+
+          <section class="support-panel" id="mentoria">
+            <div class="section-header">
+              <div>
+                <p class="section-label">Comunidade</p>
+                <h2>Ambiente de acompanhamento</h2>
+              </div>
+            </div>
+            <div class="support-list">
+              <div class="support-row">
+                <strong>Briefing da abertura</strong>
+                <span>Resumo diario com niveis, leitura macro e pontos de observacao da sessao.</span>
+              </div>
+              <div class="support-row">
+                <strong>Revisao semanal</strong>
+                <span>Replay comentado para filtrar erros de leitura, timing e execucao.</span>
+              </div>
+              <div class="support-row">
+                <strong>Perguntas da comunidade</strong>
+                <span>Canal objetivo para alinhar duvidas taticas e ajustes do plano.</span>
+              </div>
+            </div>
+          </section>
+
+          <section class="support-panel" id="preferencias">
+            <div class="section-header">
+              <div>
+                <p class="section-label">Preferencias</p>
+                <h2>Modo de consumo</h2>
+              </div>
+            </div>
+            <div class="support-list">
+              <div class="support-row">
+                <strong>Modo foco</strong>
+                <span>Amplie a area principal para estudar com menos distracoes durante as aulas.</span>
+              </div>
+              <div class="support-row">
+                <strong>Progresso automatico</strong>
+                <span>As aulas podem ser marcadas manualmente ou concluidas no fim da reproducao.</span>
+              </div>
+              <div class="support-row">
+                <strong>Trilha sequencial</strong>
+                <span>Use os botoes de aula anterior e proxima para manter o fluxo do curso.</span>
+              </div>
+            </div>
+          </section>
+        </section>
+      </main>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
